@@ -50,7 +50,7 @@ import {
           }
         })
       } else {
-        dirName = dir || '' + name || ''
+        dirName = dir + name
         RNTxcloudupload.config(tmpSecretId, tmpSecretKey, sessionToken, startTime, expiredTime, regionName)
         RNTxcloudupload.uploadFile(file, dirName, bucketName, (res, err) => {
           if (resultCb) {
